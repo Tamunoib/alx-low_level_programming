@@ -1,31 +1,33 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Finds and prints the sum of the even-valued terms
+ * main - Entry point
+ *
+ * Description: Find and prints the sum of the even-valued terms
  * followed by a new line
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i;
-	unsigned long int j, k, next, sum;
+	unsigned long int fib1 = 0, fib2 = 1, sum;
+	float total_sum;
 
-	j = 1;
-	k = 2;
-	sum = 0;
-
-	for (i = 1; i <= 33; ++i)
+	while (1)
 	{
-		if (j < 4000000 && (j % 2) == 0)
-		{
-			sum = sum + j;
-		}
-		next = j + k;
-		j = k;
-		k = next;
-	}
+		sum = fib1 + fib2;
 
-	printf("%1u\n", sum);
+		if (sum > 4000000)
+			break;
+
+		if ((sum % 2) == 0)
+			total_sum += sum;
+
+		fib1 = fib2;
+		fib2 = sum;
+	}
+	printf("%.0f\n", total_sum);
 
 	return (0);
 }
