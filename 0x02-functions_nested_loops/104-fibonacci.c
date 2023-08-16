@@ -10,8 +10,9 @@
 
 int numLength(int num)
 {
-	int lenngth = 0;
+	int length = 0;
 	if (!num)
+
 		return (1);
 
 	while (num)
