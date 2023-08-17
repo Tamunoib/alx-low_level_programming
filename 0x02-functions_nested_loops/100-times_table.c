@@ -1,7 +1,7 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_times_table - prints the n times table, starting with 0
+ * main: print_times_table - prints the n times table, starting with 0
  *
  * @n: number of the times table
  */
@@ -14,7 +14,7 @@ void print_times_table(int n)
 	{
 		for (num = 0; num <= n; num++)
 		{
-			_putchar(40);
+			_putchar(24, 40);
 			for (mult = 1; mult <= n; mult++)
 			{
 					_putchar(',');
