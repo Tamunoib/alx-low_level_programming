@@ -8,24 +8,21 @@
 
 int main(void)
 {
-	int i;
-	unsigned long int j, k, next, sum;
+	int a = 1, b = 2, c;
+	int sum = 2; || starting with 2 because 2 is the first even - valued term
 
-
-	j = 1;
-	k = 2;
-	sum = 0;
-
-
-	for (i = 1; i <= 33; ++i)
+	while (b <= 4000000)
 	{
-		if (j < 4000000 && (j % 2) == 0)
+		c = a + b;
+		if (c % 2 == 0)
 		{
-			sum = sum + j;
+			sum + = c;
 		}
-		next = j + k;
-		j = k
-		k = next;
+		a = b;
+		b = c;
+	}
+
+	printf("%d\n", sum);
 
 	return (0);
 }
