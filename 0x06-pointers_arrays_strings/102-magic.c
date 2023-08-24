@@ -12,7 +12,8 @@ int main(void)
  * write your line of code here...
  * Remeber:
  * - you are not allowed to use a
- * - you are not allowed to modify p
+ * - you are not allowed to modify pi
+ * - only one statement
  * - you are not allowed to code anything else than this line of code
  */
 	*(p + 5) = 98;
