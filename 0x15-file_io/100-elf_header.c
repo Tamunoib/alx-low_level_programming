@@ -33,7 +33,6 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 
 void close_elf(int elf);
 
-
 /**
 
  * check_elf - Checks if a file is an ELF file.
@@ -77,7 +76,6 @@ void check_elf(unsigned char *e_ident)
 
 }
 
-
 /**
 
  * print_magic - Prints the magic numbers of an ELF header.
@@ -118,7 +116,6 @@ void print_magic(unsigned char *e_ident)
         }
 
 }
-
 
 /**
 
@@ -165,7 +162,6 @@ void print_class(unsigned char *e_ident)
 
 }
 
-
 /**
 
  * print_data - Prints the data of an ELF header.
@@ -210,6 +206,7 @@ void print_data(unsigned char *e_ident)
         }
 
 }
+
 /**
 
  *  * print_version - Prints the version of an ELF header.
@@ -335,7 +332,6 @@ void print_osabi(unsigned char *e_ident)
 
 }
 
-
 /**
 
  * print_abi - Prints the ABI version of an ELF header.
@@ -353,7 +349,6 @@ void print_abi(unsigned char *e_ident)
                 e_ident[EI_ABIVERSION]);
 
 }
-
 
 /**
 
@@ -418,6 +413,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
         }
 
 }
+
 /**
 
  * print_entry - Prints the entry point of an ELF header.
